@@ -1,0 +1,9 @@
+/*code files for project work*/
+FD_PSV : main program for 2D finite differences
+initproc (called by FD_PSV) : does processor initialization and divides processor in 2D grid
+matcopy_elastic_PSV (called by FD_PSV) : function copies material property values from neighbouritng processes
+av_mue and av_rho (called by FD_PSV) : calculates averages of material properties after material elastic FD_PSV
+psv (called by FD_PSV) : does actual time stepping and wavepropagation
+update_v_PML_PSV (called by PSV) : does the actualt time stepping
+exchange_v_PSV (called by psv) : velocity-exchange between the neighbouring processors
+exchange_s_PSV (called by psv) : stress exchang between the neighbouring processes
